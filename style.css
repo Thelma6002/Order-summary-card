@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap');
+
+
+:root{
+    --bg-color:hsl(225, 100%, 94%);
+    --card-color: #ffffff; 
+    --text-color: black;
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    background: url(images/pattern-background-desktop.svg) no-repeat;
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*height: 100vh;*/
+    font-size: 13px;
+}
+
+.main{
+    /*margin-top: 40px;*/
+    padding: 0 0 2.5em 0;
+    background-color: var(--card-color) ;
+    width: 45%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.headimg{
+    width: 100%;
+    height: auto;
+    /*border-radius: 10px 1px 0 0;*/
+}
+
+.content{
+    padding: 2.5em 3em;
+}
+
+h1{
+    font-size: 2.5em;
+    font-weight: 800;
+    margin: 0;
+    color: var(--text-color);
+}
+
+.content p{
+    line-height: 1.6em;
+    font-size: 1.5em;
+
+}
+
+.sub{
+    display: flex;
+    background-color:hsl(225, 100%, 98%);
+    text-align: left;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+h2{
+    font-size: 1em;
+    color: var(--text-color);
+    font-weight: 900;
+    margin-bottom: 0;
+}
+
+.musicicon{
+    width: 100%;
+    height: auto;
+    max-width: 3em;
+}
+
+.sub-price{
+    display: inline-block;
+}
+
+.sub-price{margin-top: 0.5em;}
+
+.change{
+    color: hsl(245, 75%, 52%);
+    font-weight: 900;
+    text-align: center;
+    text-decoration: none;
+    flex-grow: 0.5;
+}
+
+.pay{
+    padding: 1em;
+    width: 80%;
+    text-align: center;
+    border: none;
+    color: var(--card-color);
+    background-color:  hsl(245, 75%, 52%);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 1.5em 1.75em;
+    transition: 0.5 ease;
+}
+
+.cancel{
+    text-decoration: none;
+    color: gray;
+    font-weight: 900;
+    transition: 0.3 ease;
+}
+
+.payment{
+    display: flex;
+    flex-direction: column;
+}
+
+.change:hover{opacity: 0.5; cursor: pointer;}
+.pay:hover{opacity: 0.5; cursor: pointer;}
+.cancel:hover{opacity: 0.5; cursor: pointer;}
+
+.change:focus{opacity: 0.5; cursor: pointer;}
+.pay:focus{opacity: 0.5; cursor: pointer;}
+.cancel:focus{opacity: 0.5; cursor: pointer;}
